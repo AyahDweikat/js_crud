@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap V5.2-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.min.css" integrity="sha512-hwwdtOTYkQwW2sedIsbuP1h0mWeJe/hFOfsvNKpRB3CkRxq8EW7QMheec1Sgd8prYxGm1OM9OZcGW7/GUud5Fw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Awesome V6.1.2 -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+  <div class="container w-50 m-auto my-5">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Course Name <span class="text-danger">*</span></label>
+      <input id="courseName" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <div class="alert alert-danger" id="nameAlert">Please Start Name with Capital, min character 3 characters and maximum is 8 characters</div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Course Category</label>
+      <input id="courseCat" type="text" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Course Price</label>
+      <input id="coursePrice" type="number" class="form-control" id="exampleInputPassword1">
+    </div>
+
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Course Description</label>
+      <textarea id="courseDesc" class="form-control" id="exampleInputPassword1"></textarea>
+    </div>
+    <button disabled type="button" id="click" class="btn btn-outline-secondary">Add Course</button>
+    <button type="clear" class="btn btn-outline-secondary">Clear</button>
+    <div class="d-block mt-3 mb-3">
+      <button type="button" id="deleteBtn" class="btn btn-outline-danger">Delete All</button>
+    </div>
+    <input type="search" placeholder="search" class="form-control" onkeyup="search(this.value)" />
+
+
+
+    <table class="table table-striped mt-5">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+          <th scope="col">Category</th>
+          <th scope="col">Price</th>
+          <th scope="col">Description</th>
+          <th scope="col">action</th>
+
+        </tr>
+      </thead>
+      <tbody id="data">
+        
+      </tbody>
+    </table>
+  </div>
+  
+  
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.min.js" integrity="sha512-MqEDqB7me8klOYxXXQlB4LaNf9V9S0+sG1i8LtPOYmHqICuEZ9ZLbyV3qIfADg2UJcLyCm4fawNiFvnYbcBJ1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>   
+</body>
+</html>
